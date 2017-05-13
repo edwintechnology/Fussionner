@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> Upload a File </title>
+<style type="text/css">
+body{
+background-color:white;
+}
+table {border: 1px solid black; background-color:#cff;}
+td, tr {border: 0}
+</style>
+</head>
+<body>
+<form enctype="multipart/form-data" name="Upload" action="grabfile.php" method="post">
+
+
+<table>
+<tr><th colspan="2"><p>Upload a File</p></th></tr>
+<tr><td colspan="2"><p> Select a file to upload.</td></tr>
+<tr><td><p>File Description:</td><td><input type="text" name="strDesc" size="20" maxlength="50"></td></tr>
+<tr><td><p>File Location:</td><td><input type="file" name="fileUpload" size="20"></td></tr>
+<tr><td><input type="submit" value="Upload this file" name="cmdSubmit"></td></tr>
+</table>
+<a href="showfiles.php"> Click here to view files </a>
+<a href="delete.php"> a </a>
+</form>
+</body>
+</html>
